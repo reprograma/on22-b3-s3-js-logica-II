@@ -2,7 +2,7 @@
   <img src="assets/reprograma-fundos-claros.png" alt="logo reprograma" width="500">
 </h1>
 
-# Tema da Aula
+# LOGICA I
 
 Turma Online 22 - B3 | Back-end | Semana 2 | 2023 | Professora Manuelly Suzik
 
@@ -28,33 +28,33 @@ O que veremos na aula de hoje?
 
 ### O que é Javascript
 
-- [Conceitos](#conceitos)
-- [NodeJS](#nodejs)
+* [Por que Javascript?](#conceitos)
+* [NodeJS](#nodejs)
+  * [Console](#console)
 
 ### Variáveis
 
-- [var, let e const](#topico3)
-- [Palavras Reservadas](#subtopico1)
-- [Usando as Variáveis](#subtopico1)
-- [Clean Code: Variáveis](#subtopico1)
+* [var, let, const e escopos](#topico3)
+* [Palavras Reservadas](#subtopico1)
+* [Clean Code: Variáveis](#subtopico1)
 
 ### Tipos de Dados
 
-- [Tipos Primitivos](#topico3)
+* [Tipos Primitivos](#topico3)
 
-    * [Number](#subtopico1)
-    * [Float](#subtopico2)
-    * [Boolean](#subtopico1)
-    * [String](#subtopico2)
-
+  * [Number](#subtopico1)
+  * [Boolean](#subtopico1)
+  * [String](#subtopico2)
+  * [Null e Undefined](#subtopico2)
 
 ### Operadores
 
-- [Tópico 4](#topico4)
+* [Lógicos](#topico4)
+* [Unários, Binários](#topico4)
 
-### que é Javascript
+### O que é Javascript
 
-#### Topico1
+#### Conceitos
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit. Nunc tempor libero tortor, ac commodo erat porttitor ut. Donec vitae orci arcu. Nunc felis mi, maximus a turpis a, mollis pulvinar enim. Vivamus aliquam ante dui, a blandit massa rutrum et. Etiam hendrerit gravida ultrices. Nunc ante massa, dictum eget justo eget, feugiat tincidunt metus.
 
