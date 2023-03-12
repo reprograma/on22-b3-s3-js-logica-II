@@ -28,7 +28,7 @@ O que veremos na aula de hoje?
 
 ### O que é Javascript
 
-* [Por que Javascript?](#conceitos)
+* [Por que Javascript?](#porquejavascript)
 * [NodeJS](#nodejs)
   * [Console](#console)
 
@@ -54,7 +54,7 @@ O que veremos na aula de hoje?
 
 ### O que é Javascript
 
-#### Conceitos
+#### Por que Javascript?
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam leo nibh, tempus sed rhoncus et, ultrices vitae orci. Donec erat mauris, laoreet in tortor vel, eleifend suscipit nibh. Mauris pharetra dui quis turpis rutrum blandit. Nunc tempor libero tortor, ac commodo erat porttitor ut. Donec vitae orci arcu. Nunc felis mi, maximus a turpis a, mollis pulvinar enim. Vivamus aliquam ante dui, a blandit massa rutrum et. Etiam hendrerit gravida ultrices. Nunc ante massa, dictum eget justo eget, feugiat tincidunt metus.
 
