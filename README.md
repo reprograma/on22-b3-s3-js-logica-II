@@ -4,7 +4,7 @@
 
 # LOGICA I
 
-Turma Online 22 - B3 | Back-end | Semana 2 | 2023 | Professora Manuelly Suzik
+Turma Online 22 - B3 | Back-end | Semana 3 | 2023 | Professora Manuelly Suzik
 
 ### Instruções
 
@@ -13,7 +13,6 @@ Antes de começar, vamos organizar nosso setup.
 * Fork esse repositório
 * Clone o fork na sua máquina (Para isso basta abrir o seu terminal e digitar `git clone url-do-seu-repositorio-forkado`)
 * Entre na pasta do seu repositório (Para isso basta abrir o seu terminal e digitar `cd nome-do-seu-repositorio-forkado`)
-* [Add outras intrucoes caso necessario]
 
 ### Resumo
 
@@ -46,13 +45,49 @@ O que veremos na aula de hoje?
   * [Nested IF](#nested-if)
   * [Switch](#switch)
 
+***
+
 ## Funções
+
+### O que é
+
+### Quando Utilizar
+
+### Declaração
+
+### O que é
+
+### Retorno
+
+### Clean Code: Comentários e Funções
 
 ## Escopo
 
+### Conceito
+  
+### Escopo Global
+  
+### Escopo Local ou de Bloco
+  
+### Var e Hoisting
+  
+### Escopo Léxico
+  
 ## Estrutura Condicional
 
-### Exercícios
+## Conceito
+  
+### Estruturas
+  
+### if / else
+  
+### Ternário
+  
+### Nested IF
+  
+### Switch
+  
+## Exercícios
 
 * [Exercicio para sala](https://github.com/mflilian/repo-example/tree/main/exercicios/para-sala)
 * [Exercicio para casa](https://github.com/mflilian/repo-example/tree/main/exercicios/para-casa)
