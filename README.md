@@ -2,7 +2,7 @@
   <img src="assets/reprograma-fundos-claros.png" alt="logo reprograma" width="500">
 </h1>
 
-# LOGICA I
+# LOGICA II
 
 Turma Online 22 - B3 | Back-end | Semana 3 | 2023 | Professora Manuelly Suzik
 
@@ -51,13 +51,70 @@ O que veremos na aula de hoje?
 
 ### O que é
 
+  Para a programação uma função é um bloco de código que executa uma tarefa específica e pode ser chamado quantas vezes for necessário dentro de seu programa.
+
 ### Quando Utilizar
+
+  As funções são utilizadas amplamente na programação, tanto que é praticamente impossível encontrar programas que não usam.
+  
+  Entre os diversos benefícios, listarei alguns motivos para utilizar as funções:
+
+* Reutilização de código: ao definir uma função, você pode escrever um bloco de código uma vez e reutilizá-lo em várias partes do programa, em vez de ter que repetir o mesmo código várias vezes.
+
+* Modularização do código: as funções permitem que você divida um programa em partes menores e mais gerenciáveis, tornando o código mais fácil de entender e manter.
+
+* Abstração de complexidade: ao definir funções, você pode ocultar a complexidade do código por trás de uma interface mais simples e fácil de usar.
+
+* Parâmetros de entrada: as funções permitem que você passe parâmetros de entrada que personalizam a tarefa que a função realiza.
+
+* Retorno de valores: as funções podem retornar valores que podem ser usados em outras partes do programa.
+
+* Legibilidade do código: o uso de funções bem nomeadas e bem definidas pode tornar o código mais legível e fácil de entender.
 
 ### Declaração
 
-### O que é
+Para declarar uma funções precisamos utilizar a palavra reservada `function` e em seguida declarar um nome que resuma o que aquela função faz.
+
+Criarei uma função capaz de somar dois números e exibir o resultado no console:
+
+```Javascript
+function somarDoisNumeros(){
+  let n1 = 5
+  let n2 = 10
+
+  console.log(5+10)
+}
+```
+
+A função `somarDoisNumeros()` foi declarada.
+
+Declarar a função apenas não é o suficiente para que seja exibida a soma dos dois números no console, pois ao declarar uma função você apenas define as instruções que serão seguidas quando essa função for executada.
+
+Para executar uma função que foi declarada você precisa chama-la no código dessa forma: `somarDoisNumeros()`, sem as chaves - por isso ela pode ser executada inúmeras vezes. Dessa forma, o Javascript sabe que você está solicitando a execução de uma função já declarada antes.
 
 ### Retorno
+Em alguns momentos , uma função que apenas executa alguma coisa não atende nossas necessidades e precisamos que uma função execute algo e nos traga um valor já processado pelas instruções dentro dela.
+
+Vamos imaginar que , no lugar de exibir o resultado da soma no `console.log` eu queira que a função retorne o valor para o lugar pra onde ela foi chamada, como eu faria isso?
+
+Eu teria que dizer que depois de executar aquela soma, o total da soma teria que retornar no lugar onde minha função foi chamada.
+
+Olhe o exemplo:
+
+```Javascript
+function somarDoisNumeros(){
+  let n1 = 5
+  let n2 = 10
+  let total = n1 +n2
+
+  return total
+}
+
+console.log(somarDoisNumeros()) // Saída: 15
+
+```
+
+O `console.log(somarDoisNumeros())` vai executar a função e quando ela terminar de ser executada ela retornará um número, então, o `console.log()` poderá exibi-lo no console.
 
 ### Clean Code: Comentários e Funções
 
