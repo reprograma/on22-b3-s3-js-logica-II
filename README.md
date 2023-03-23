@@ -24,26 +24,33 @@ O que veremos na aula de hoje?
 
 ## Conteúdo
 
-* [Funções](#funções)
-  * [O que é](#o-que-é)
-  * [Quando Utilizar](#quando-utilizar)
-  * [Declaração](#declaração)
-  * [O que é](#o-que-é)
-  * [Retorno](#quando-utilizar)
-  * [Clean Code: Comentários e Funções](#declaração)
-* [Escopo](#escopo)
-  * [Conceito](#conceito)
-  * [Escopo Global](#escopo-global)
-  * [Escopo Local ou de Bloco](#escopo-local-ou-de-bloco)
-  * [Var e Hoisting](#var-e-hoisting)
-  * [Escopo Léxico](#escopo-léxico)
-* [Estrutura Condicional](#estrutura-condicional)
-  * [Conceito](#conceito)
-  * [Estruturas](#estruturas)
-  * [if / else](#if-else)
-  * [Ternário](#ternário)
-  * [Nested IF](#nested-if)
-  * [Switch](#switch)
+- [LOGICA II](#logica-ii)
+    - [Instruções](#instruções)
+    - [Resumo](#resumo)
+  - [Conteúdo](#conteúdo)
+  - [Funções](#funções)
+    - [O que é](#o-que-é)
+    - [Quando Utilizar](#quando-utilizar)
+    - [Declaração](#declaração)
+    - [Retorno](#retorno)
+    - [Parâmetros](#parâmetros)
+    - [Comentários](#comentários)
+    - [Clean Code: Comentários e Funções](#clean-code-comentários-e-funções)
+  - [Escopo](#escopo)
+    - [Conceito](#conceito)
+    - [Escopo Global](#escopo-global)
+    - [Escopo Local ou de Bloco](#escopo-local-ou-de-bloco)
+    - [Escopo Léxico](#escopo-léxico)
+    - [Var e Hoisting](#var-e-hoisting)
+  - [Estrutura Condicional](#estrutura-condicional)
+  - [Conceito](#conceito-1)
+    - [if / else](#if--else)
+    - [Ternário](#ternário)
+    - [Nested IF](#nested-if)
+    - [Switch](#switch)
+  - [Exercícios](#exercícios)
+    - [Material da aula](#material-da-aula)
+    - [Links Úteis](#links-úteis)
 
 ***
 
@@ -90,14 +97,12 @@ A função `somarDoisNumeros()` foi declarada.
 
 Declarar a função apenas não é o suficiente para que seja exibida a soma dos dois números no console, pois ao declarar uma função você apenas define as instruções que serão seguidas quando essa função for executada.
 
-Para executar uma função que foi declarada você precisa chama-la no código dessa forma: `somarDoisNumeros()`, sem as chaves - por isso ela pode ser executada inúmeras vezes. Dessa forma, o Javascript sabe que você está solicitando a execução de uma função já declarada antes.
+Então executar uma função que foi declarada você precisa chama-la no código dessa forma: `somarDoisNumeros()`, sem as chaves - assim ela pode ser executada inúmeras vezes quando necessário. Dessa forma, o Javascript sabe que você está solicitando a execução de uma função já declarada antes.
 
 ### Retorno
-Em alguns momentos , uma função que apenas executa alguma coisa não atende nossas necessidades e precisamos que uma função execute algo e nos traga um valor já processado pelas instruções dentro dela.
+Em alguns momentos uma função que apenas executa alguma coisa não atende nossas necessidades e precisamos que uma função execute algo e nos traga um valor já processado pelas instruções dentro dela.
 
 Vamos imaginar que , no lugar de exibir o resultado da soma no `console.log` eu queira que a função retorne o valor para o lugar pra onde ela foi chamada, como eu faria isso?
-
-Eu teria que dizer que depois de executar aquela soma, o total da soma teria que retornar no lugar onde minha função foi chamada.
 
 Olhe o exemplo:
 
@@ -110,34 +115,169 @@ function somarDoisNumeros(){
   return total
 }
 
-console.log(somarDoisNumeros()) // Saída: 15
+console.log(somarDoisNumeros()) // Retorna: 15
 
 ```
 
 O `console.log(somarDoisNumeros())` vai executar a função e quando ela terminar de ser executada ela retornará um número, então, o `console.log()` poderá exibi-lo no console.
 
-### Clean Code: Comentários e Funções
+### Parâmetros
+Uma função para ser reutilizável ela deve ser capaz de também ser dinâmica. Se tivermos valores estáticos declarados dentro dela fará que sempre ela retorne um valor fixo ou execute apenas uma tarefa. Mas utilizando a função , você pode explorar muitas outras coisas.
 
+Usando nosso exemplo, imagine que agora no lugar de declarar números dentro da função eu poderei passar números diferentes cada vez que precisar executar a função. Isso só será possível se ao declarar a função , eu também indique que preciso que parâmetros sejam enviados para que ela execute a tarefa:
+
+```Javascript
+function somarDoisNumeros(numero1, numero2) {
+
+let total = numero1 + numero2
+
+return total
+}
+```
+
+Prontinho. Agora que tenho uma função que recebe como parâmetro dois números e depois retorna o resultado da soma poderei fazer diferentes somas e usar de diferentes formas assim:
+
+```Javascript
+console.log(somarDoisNumeros(5,5)) // Retorna 10
+console.log(somarDoisNumeros(9,2)) // Retorna 11
+console.log(somarDoisNumeros(10,2)) // Retorna 12
+...
+```
+
+### Comentários
+Algumas vezes é necessário utilizar **códigos não executáveis** ( que serão ignorados pelo compilador ) em nossos arquivos. Para isso você pode utilizar os comentários.
+
+Veja como declarar um comentário de uma linha no Javascript:
+
+```Javascript
+//Esse é um comentário de uma linha e será ignorado pelo compilador
+```
+Se você deseja escrever comentários com mais de uma linha pode utilizar também:
+```Javascript
+/**
+ * Esse é um comentário de várias linhas em um arquivo Javascript
+ * Você pode escrever o que quiser aqui, anotações ou até algum tipo de ajuda
+ * para entender o que o seu código ou função fazem =)
+ * 
+*/
+```
+
+### Clean Code: Comentários e Funções
+Vamos ver o que o clean code diz sobre a melhor forma de utilizar funções de acordo com o Código Limpo:
+
+**Funções**:
+
+ Devem ser curtas e fazer apenas uma coisa. Idealmente, não devem ter mais do que 20 linhas de código. Elas também devem ter nomes descritivos que indiquem claramente o que fazem. Outra recomendação é evitar que as funções tenham efeitos colaterais - como alterar valores de outras funções - e que possuam muitos parâmetros de entrada, pois isso pode dificultar a compreensão do seu propósito.
+
+ **Comentários**:
+ 
+  Devem ser usados com moderação e somente para esclarecer algum aspecto do código que não é óbvio ou que pode gerar dúvidas . Eles devem ser claros e concisos, sem redundâncias e sem informações irrelevantes. Além disso, os comentários devem ser mantidos atualizados, de modo que reflitam o código atual. É importante lembrar que comentários não podem substituir código limpo e legível. Isso quer dizer que o seu código deve falar por si, sem necessidade de ter comentários explicando o que ele faz.
 ## Escopo
 
 ### Conceito
-  
+
+  Escopo define onde uma variável ou função pode ser acessada no código. Os escopos definem a visibilidade de uma variável ou função, ou seja, em que parte do programa ela pode ser executada.
 ### Escopo Global
-  
+   Uma variável ou função declarada fora de qualquer função ou bloco de código tem escopo global, o que significa que ela pode ser acessada de qualquer lugar do programa.
+
+ ```Javascript
+ let minhaVariavel = "Valor da variável" //escopo global
+
+ function minhaFuncao() {
+  console.log(minhaVariavel) // Acessível no escopo de bloco
+ }
+
+
+ minhaFuncao() // Console Exibe: Valor da variável
+ ```  
 ### Escopo Local ou de Bloco
-  
-### Var e Hoisting
-  
+  Variáveis ou funções declaradas dentro de uma função ou bloco de código têm escopo local, o que significa que elas só podem ser acessadas dentro desse escopo.
+
+ ```Javascript
+ function minhaFuncao() {
+  let minhaVariavel = "Valor da variável" //declarada no escopo de bloco
+
+ }
+  console.log(minhaVariavel) // Não é acessível no escopo global
+
+ ```
 ### Escopo Léxico
-  
+
+Escopo léxico é um conceito relacionado à definição de escopo de variáveis em linguagens de programação. Ele se refere ao fato de que a resolução de nomes de variáveis é baseada na estrutura léxica do programa, ou seja, na forma como o código está escrito e organizado em blocos de código.
+
+Em outras palavras, o escopo léxico define que o escopo de uma variável é determinado pelo seu local de declaração no código fonte, e não pela sua posição em tempo de execução. Isso significa que as variáveis declaradas em um escopo superior, como uma função pai ou um arquivo externo, são acessíveis em escopos internos, como funções filhas ou blocos de código dentro da função pai.
+
+No Javascript o escopo léxico é muito importante!
+
+### Var e Hoisting
+
+Já que falamos sobre o escopo léxico e o quanto isso é importante no Javascript, podemos usar como exemplo o comportamento das variáveis `var`.
+
+As variáveis declaradas utilizando `var` sofrem um efeito chamado "Hoisting".
+
+Hoisting é um comportamento em JavaScript em que as declarações de variáveis e funções são movidas para o topo (o início) do escopo em que se encontram, independentemente de onde foram declaradas.
+
+No caso das variáveis, isso significa que a declaração da variável é movida para o topo do escopo, mas não sua atribuição de valor. Ou seja, o nome da variável é criado e reservado na memória, mas seu valor inicial não é definido até o ponto em que a variável é de fato atribuída.
+
+Veja o exemplo:
+
+```Javascript
+
+console.log(x); // undefined
+var x = 5;
+
+```
+
+Executar o `console.log(x)` antes de declarar a variável é permitido porque para o javascript a variável sempre é "içada" para o top do bloco de execução.
+
+Então para o Javascript esse é comportamento:
+
+```Javascript
+var x; // declaração é "içada" para o topo do escopo
+console.log(x); // undefined
+x = 5; // valor é atribuído à variável
+```
+Isso apenas acontece com a declaração var ( que é mais antiga), hoje em dia existem as opções de `let` e `const` que já conhecemos e esse comportamento não acontece.
 ## Estrutura Condicional
 
 ## Conceito
-  
-### Estruturas
-  
+
+Estruturas condicionais são comandos de programação que permitem que o código execute diferentes ações dependendo se uma condição é verdadeira ou falsa. Elas permitem que um programa tome decisões lógicas com base nas informações disponíveis em tempo de execução. As estruturas condicionais mais comuns são o "if", "else" e "else if".
 ### if / else
-  
+
+Antes de qualquer coisa, vamos olhar para o código:
+
+```Javascript
+
+if(diaDeSol){
+  Vamos para a piscina
+}else {
+  ficaremos em casa e assistiremos um filme
+}
+```
+Então vamos analisar esse código... Podemos ver que uma CONDIÇÃO deve ser atendida para algo acontecer, do contrário, outra coisa acontecerá. Nesse caso, nossa condição deve ser VERDADEIRA para que possamos curtir nosso dia na piscina.
+
+Então transferindo isso para o português: *Se for um dia de sol, vamos para a piscina. Senão, ficaremos em casa e assistiremos um filme*
+
+Imaginou as possibilidades? Isso dá muita mais emoção para as nossas funções pois ela ganha cade vez mais utilidade. Deixe-me dar um exemplo:
+
+```Javascript
+
+function executarOperacaoMatematica(operacao, numero1, numero2) {
+  if(operacao == "multiplicar") {
+    return numero1 * numero2
+  }else if(operacao == "somar"){
+    return numero1 + numero2
+  }else {
+    return "Operação não é válida"
+  }
+
+  console.log("multiplicar",2,6) // Exibe no console: 12
+  console.log("somar",2,6) // Exibe no console: 8
+  console.log("operação inválida",2,6) // Exibe no console: "Operação não é válida"
+}
+```
+Legal né? Com isso é possível dizer qual operação quero executar mandando o primeiro parâmetro e dar a minha função mais possibilidades.
 ### Ternário
   
 ### Nested IF
