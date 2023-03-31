@@ -279,11 +279,79 @@ function executarOperacaoMatematica(operacao, numero1, numero2) {
 ```
 Legal né? Com isso é possível dizer qual operação quero executar mandando o primeiro parâmetro e dar a minha função mais possibilidades.
 ### Ternário
-  
+No Javascript existe uma maneira mais simples de se declarar uma condição if/else e é bastante útil quando usado corretamente.
+O **if ternário** é composto por três partes: a condição a ser avaliada, o valor a ser retornado se a condição for verdadeira e o valor a ser retornado se a condição for falsa. A sintaxe básica é a seguinte:
+
+veja o exemplo aqui:
+```Javascript
+condição ? valor_se_verdadeiro : valor_se_falso;
+```
+Ou seja , se quisermos verificar se a idade de alguém é maior que um certo número podemos fazer assim:
+
+```Javscript
+const numero = 10
+const resultado = numero > 18 ? "Maior de idade" : "Menor de idade"
+
+console.log(resultado) // "Menor de idade"
+```
+
+Entendeu? Legal né? O segredo está na prática! Então pratique bastante para saber quando usar o ternário ou não!
+
 ### Nested IF
-  
+ O Nested IF, também conhecido como "if aninhado", ocorre quando um bloco de código IF é colocado dentro de outro bloco de código IF. Embora o uso de if aninhados possa parecer uma solução rápida e fácil para resolver problemas complexos de lógica, isso pode tornar o código difícil de entender e manter.
+
+Em Javascript, o uso excessivo de if aninhados pode levar a problemas de legibilidade e manutenção do código, além de aumentar a complexidade e a probabilidade de erros.
+
+No tópico abaixo vou apresentar uma maneira mais limpa para lidar com diversas condições diferentes
 ### Switch
-  
+ Quando você se deparar com um algoritmo que precisa fazer várias verificações para um mesmo resultado a melhor escolha é utilizar a estrutura condicional switch/case, olha só como ela funciona:
+ 
+Vamos para um exemplo: Imagine que eu tenho que retonar uma string informando qual dia da semana estamos ( de 1 a 5 ). Se formos utilizar if/else ficaria algo como:
+
+```Javascript
+let diaDaSemana = 2
+let mensagem
+
+if(diaDaSemana == 1){
+mensagem="Hoje é segunda-feira"
+}else if (diaDaSemana==2){
+mensagem="Hoje é segunda-feira"}else if(diaDaSemana==3){
+mensagem="Hoje é terça-feira"}...
+
+// assim por diante...
+```
+Enquanto com switch/case, escreveríamos assim:
+
+```Javascript
+let diaSemana = 5;
+let mensagem;
+
+switch (diaSemana) {
+  case 1:
+    mensagem = "Hoje é segunda-feira.";
+    break;
+  case 2:
+    mensagem = "Hoje é terça-feira.";
+    break;
+  case 3:
+    mensagem = "Hoje é quarta-feira.";
+    break;
+  case 4:
+    mensagem = "Hoje é quinta-feira.";
+    break;
+  case 5:
+    mensagem = "Hoje é sexta-feira.";
+    break;
+  default:
+    mensagem = "Não é um dia da semana válido.";
+}
+
+console.log(mensagem);
+```
+
+Muito mais limpo não é?
+
+Então a estrutura switch/case é usada para executar diferentes ações com base no valor de uma variável. Ela é uma alternativa para vários blocos if/else aninhados, tornando o código mais limpo e fácil de entender.
 ## Exercícios
 
 * [Exercicio para sala](https://github.com/mflilian/repo-example/tree/main/exercicios/para-sala)
@@ -292,12 +360,6 @@ Legal né? Com isso é possível dizer qual operação quero executar mandando o
 ### Material da aula
 
 ### Links Úteis
-
-* [Lorem Ipsum](https://www.lipsum.com/feed/html)
-
-* [Lorem Ipsum](https://www.lipsum.com/feed/html)
-* [Lorem Ipsum](https://www.lipsum.com/feed/html)
-* [Lorem Ipsum](https://www.lipsum.com/feed/html)
 
 <p align="center">
 Desenvolvido com :purple_heart:  
