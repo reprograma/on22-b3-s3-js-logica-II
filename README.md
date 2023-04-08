@@ -97,7 +97,7 @@ A função `somarDoisNumeros()` foi declarada.
 
 Declarar a função apenas não é o suficiente para que seja exibida a soma dos dois números no console, pois ao declarar uma função você apenas define as instruções que serão seguidas quando essa função for executada.
 
-Então executar uma função que foi declarada você precisa chama-la no código dessa forma: `somarDoisNumeros()`, sem as chaves - assim ela pode ser executada inúmeras vezes quando necessário. Dessa forma, o Javascript sabe que você está solicitando a execução de uma função já declarada antes.
+Então, para executar uma função que foi declarada você precisa chama-la no código dessa forma: `somarDoisNumeros()`, sem as chaves - assim ela pode ser executada inúmeras vezes quando necessário. Dessa forma, o Javascript sabe que você está solicitando a execução de uma função já declarada antes.
 
 ### Retorno
 Em alguns momentos uma função que apenas executa alguma coisa não atende nossas necessidades e precisamos que uma função execute algo e nos traga um valor já processado pelas instruções dentro dela.
