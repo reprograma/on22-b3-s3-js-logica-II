@@ -80,7 +80,7 @@ O que veremos na aula de hoje?
 
 ### Declaração
 
-Para declarar uma funções precisamos utilizar a palavra reservada `function` e em seguida declarar um nome que resuma o que aquela função faz.
+Para declarar uma função precisamos utilizar a palavra reservada `function` e em seguida declarar um nome que resuma o que aquela função faz.
 
 Criarei uma função capaz de somar dois números e exibir o resultado no console:
 
