@@ -2,15 +2,19 @@
 //
 
 function parityCheck (number) {
-
+    let parity
+    
     if (number % 2 == 0) {
-        console.log("par")
+        parity = "par"
+    } else if (Number.isInteger(number) == false) {
+        parity = "not an integer!"
     } else {
-        console.log("ímpar")
+        parity = "ímpar"
     }
+    return parity
 }
 
-parityCheck(2.5)
-
-//parityCheck(4) should return "par",
-//whist parityCheck(5) should return "ímpar"
+console.log(parityCheck(0))
+console.log(parityCheck(1))
+console.log(parityCheck(2))
+console.log(parityCheck(2.5))

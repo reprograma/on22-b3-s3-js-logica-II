@@ -11,53 +11,51 @@ function monthNamer (monthNumber) {
         switch (monthNumber) {
             case 1:
                 month = "January"
-                break
+                return month
             case 2:
                 month = "February"
-                break
+                return month
             case 3:
                 month = "March"
-                break
+                return month
             case 4:
                 month = "April"
-                break
+                return month
             case 5:
                 month = "May"
-                break
+                return month
             case 6:
                 month = "June"
-                break
+                return month
             case 7:
                 month = "July"
-                break
+                return month
             case 8:
                 month = "August"
-                break
+                return month
             case 9:
                 month = "September"
-                break
+                return month
             case 10:
                 month = "October"
-                break
+                return month
             case 11:
                 month = "November"
-                break
+                return month
             case 12:
                 month = "December"
-                break
+                return month
             case 12:
         }
-        console.log(month)
     }
 }
 
-//
 
-monthNamer(-1)
-monthNamer(0)
-monthNamer(1.5)
-monthNamer(3)
-monthNamer(7)
-monthNamer(10)
-monthNamer(12)
-monthNamer(15)
+console.log(monthNamer(-1))
+console.log(monthNamer(0))
+console.log(monthNamer(1.5))
+console.log(monthNamer(3))
+console.log(monthNamer(7))
+console.log(monthNamer(10))
+console.log(monthNamer(12))
+console.log(monthNamer(15))
