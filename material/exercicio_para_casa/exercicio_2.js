@@ -1,5 +1,8 @@
-//
-//
+// This 'monthNamer' function uses a switch case structure to transform given month numbers into their
+// corresponding month names.
+
+// The switch statement is embedded inside an 'if else' structure which checks whether or not the
+// 'monthNumber' parameter has received a valid month number.
 
 function monthNamer (monthNumber) {
     
@@ -50,6 +53,7 @@ function monthNamer (monthNumber) {
     }
 }
 
+//logs:
 
 console.log(monthNamer(-1))
 console.log(monthNamer(0))

@@ -1,9 +1,11 @@
-//
-//
+// This 'parityCheck' function checks a number's parity using a conditional structure and returns it.
+
+// The '.isInteger()' method is applied over a 'Number' constructor to check whether or not the
+// 'number' parameter has received an input which is not an integer.
 
 function parityCheck (number) {
     let parity
-    
+
     if (number % 2 == 0) {
         parity = "par"
     } else if (Number.isInteger(number) == false) {
@@ -13,6 +15,8 @@ function parityCheck (number) {
     }
     return parity
 }
+
+//logs:
 
 console.log(parityCheck(0))
 console.log(parityCheck(1))
