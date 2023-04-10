@@ -65,4 +65,4 @@ function contemLetraA(string) {
     }
 }
 
-console.log(contemLetraA("Meu Deus Meu Senhor Me Ajuda Por Favor"));
+console.log(contemLetraA("Testando a função pra ver se rio ou se choro"));
