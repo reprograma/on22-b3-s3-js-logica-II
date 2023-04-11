@@ -3,53 +3,30 @@
 function convertendoStrEmInt(mes) {
     switch (mes) {
         case 1:
-            console.log("Janeiro")
-            break
+            return "Janeiro"
         case 2:
-            console.log("Fevereiro")
-            break    
+            return "Fevereiro"
         case 3:
-            console.log("Março")
-            break
+            return "Março"
         case 4:
-            console.log("Abril")
-            break
+            return "Abril"
         case 5:
-            console.log("Maio") 
-            break
+            return "Maio" 
         case 6:
-            console.log("Junho")
-            break    
+            return "Junho"    
         case 7:
-            console.log("Julho")
-            break
+            return "Julho"
         case 8:
-            console.log("Agosto")
-            break
+            return "Agosto"
         case 9:
-            console.log("Setembro")
-            break
+            return "Setembro"
         case 10:
-            console.log("Outubro")
-            break
+            return "Outubro"
         case 11:
-            console.log("Novembro")
-            break
+            return "Novembro"
         case 12:
-            console.log("Dezembro")
-            break
+            return "Dezembro"
     }
     return mes
 }
-mesUm = convertendoStrEmInt(1)
-mesDois = convertendoStrEmInt(2)
-mesTres = convertendoStrEmInt(3)
-mesQuatro = convertendoStrEmInt(4)
-mesCinco = convertendoStrEmInt(5)
-mesSeis = convertendoStrEmInt(6)
-mesSete = convertendoStrEmInt(7)
-mesOito = convertendoStrEmInt(8)
-mesNove = convertendoStrEmInt(9)
-mesDez = convertendoStrEmInt(10)
-mesOnze = convertendoStrEmInt(11)
-mesDoze = convertendoStrEmInt(12)
+console.log('Resultado para mes 1 :', convertendoStrEmInt(1))
