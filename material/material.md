@@ -1,6 +1,6 @@
-<h1 align="center">
+<p align="center">
     <img src="my_assets/nearly_logo.png" alt="nearly_logo" width="500">
-</h1>
+</p>
 
 # Week 3 - Notes
 
@@ -8,9 +8,11 @@
 
 ## Functions in JS
 
-    >
-    >
-    >
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<br>
+<br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+</br>
 ### **Declaration:**
 
     > function functionName() {
@@ -33,30 +35,55 @@
 ***
 
 ## Scope
+<img src="my_assets/scope.png" alt="logic_diagram" width="350" align="right">
 
-### **Global Scope:**
-    >
-### **Local Scope:**
-    >
-### **Block Scope:**
-    >
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+### **Global Scope**
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+
+### **Local Scope**
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
++ #### **Function Scope**
+
++ #### **Block Scope**
+
 ***
 ## Conditional Structures
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+### **Conditional operator (Ternary):**
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+    > condition ? expressionIfTrue : expressionIfFalse
 ### **If Else:**
-    > if (condition)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+    > if (condition) {
         statement1
-    else
+    } else {
         statement2
+    }
 ### **Nested Ifs:**
-    >
-### **Conditional (Ternary):**
-    >
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+    > function example() {
+    if (condition1) {
+    return value1;
+    } else if (condition2) {
+    return value2;
+    } else {
+    return value3;
+    }
 ### **Switch Case**
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
     >switch (expression) {
         case value1:
             statements
         case value2:
+            statements
+        case value3:
             statements
     }
 ***
