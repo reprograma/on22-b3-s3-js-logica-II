@@ -8,7 +8,7 @@ function parityCheck (number) {
 
     if (number % 2 == 0) {
         parity = "par"
-    } else if (Number.isInteger(number) == false) {
+    } else if (typeof number != "number" || Number.isInteger(number) == false) {
         parity = "not an integer!"
     } else {
         parity = "ímpar"
@@ -18,7 +18,9 @@ function parityCheck (number) {
 
 //logs:
 
-console.log(parityCheck(0))
+console.log(parityCheck("zero"))
+console.log(parityCheck(-1))
 console.log(parityCheck(1))
+console.log(parityCheck(0))
 console.log(parityCheck(2))
 console.log(parityCheck(2.5))
