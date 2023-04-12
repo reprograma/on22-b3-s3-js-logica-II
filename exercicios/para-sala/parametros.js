@@ -1,4 +1,4 @@
-function exibirMensagem(nome){
+ function exibirMensagem(nome){
 
     let mensagem = `Olá ${nome}, bom dia`
 
