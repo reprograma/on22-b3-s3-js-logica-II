@@ -36,55 +36,55 @@ The return statement ends the execution of the function. As such, it must always
     }
 ### **Function Call:**
 
+Functions must be **called to run**. Since the code written in a function is only stored in the RAM, its execution depends on a call. Put in another way, its code is **not** scripted. When the function caller calls for the execution of a function, it passes the values as function **arguments**.
 
     > functionName(argument)
 ***
 
 ## Scope
-<img src="my_assets/scope.png" alt="logic_diagram" width="350" align="right">
+<img src="my_assets/scope.png" alt="logic_diagram" width="350" style="margin: 20" align="right">
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Scope is a concept used to elaborate the **accessibility of code**. The scope is the **execution context**, the space in which values and expressions can be accessed by other pieces of code. Scope thus helps us understand how a given programming language separates different codeblocks. Learning about scope helps us prevent problematic events such as **variable hoisting**. Javascript provides the following scopes:
 
 ### **Global Scope**
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-
+Global scope is the **default** execution context **for all code**. A globally declared variable can be acessed **from anywhere** within the program.
 ### **Local Scope**
+Local scopes are **modular** execution contexts. Code written **in scope** is only accessible **from inside** that given scope. There are two kinds of local scopes:
 
++ #### **Function Scope** – The scope created by a function. Variables declared within the scope of a function can only be acessed by that function.
+    
 
-
-+ #### **Function Scope**
-
-+ #### **Block Scope**
++ #### **Block Scope** – The scope created when a pair of curly brackets is written. This particular scope only scopes let and const variables so one must be aware that if a var is used it can be acessed and modified from outside the block.
 
 ***
 ## Conditional Structures
 
 
 ### **Conditional operator (Ternary):**
-The **ternary** operator blablablablabla
+The ternary is a special operator that provides a conditional strucure **by itself**. It is the **only** operator in JS that takes **three operands** as parameters: a **condition** and **two expressions**. Only one expression will be executed, depending on the boolen value of the condition. It is an alternative to the if...else statement.
 
     > condition ? expressionIfTrue : expressionIfFalse
 
-### **If Else:**
-The **if-else** structure is commonly used.
+### **If...Else:**
+The **if...else** statement is **one of the most commonly used** conditional structures. It works by **specificating a condition** to be verified as either true or false and **executing a specified statement** in the case that said condition is true. It **may** be followed by **one or more else statements**, this clause specifies another condition to be verified and statement to be run.
+    
     > if (condition) {
         statement1
         } else if (condition2) {
         statement2
-        } else {
-        statement3
-    }
+        } else statement3
+    
 
 ### **Nested Ifs:**
-Nested if-else statements are a kind of hierarchical conditional structure. Their are **not recomended**, and in fact clean code standards tell us **not to use** them. This is due to the fact that they **difficult** code reading and maintenance, as well as being **more prone to errors**.
+Nested if...else statements are a **hierarchical** conditional structure. They are **not recomended** and, in fact, clean code standards tell us **not to use** them. This is due to the fact that they **difficult** code reading and maintenance, as well as being **more prone to errors**.
 
     > if (condition1) {
         if (nestedCondition) {
            if (superNestedCondition) {
-                value
-            } else {another value}
-        } else {someOtherValue}
-    } else evenAnotherValue
+                statement
+            } else {otherStatement}
+        } else {someOtherStatement}
+    } else evenAnotherStatement
 
 ### **Switch Case**
 This structure uses the **switch** statement, evaluating its value against the values of **case** clauses. If a match is found, it executes the clause's code until a **break** statement is found.
