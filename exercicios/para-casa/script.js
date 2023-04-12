@@ -11,7 +11,7 @@ function verificaImpar(num_input) {
         msg_retorno = `O número ${num_input} é ímpar!`;
         return msg_retorno;
     }if (num_input === 0) {
-        msg_retorno = "O número é zero (0)."
+        msg_retorno = "O número inserido é zero (0)."
         return msg_retorno;
     }else {
         msg_retorno = `O número ${num_input} é par!`
@@ -19,13 +19,14 @@ function verificaImpar(num_input) {
     }
 }
 
-/* Case test 1
+// Case test 1
+
+console.log("Ex 1:\n");
 console.log(verificaImpar(3));
 console.log(verificaImpar(2));
 console.log(verificaImpar(240));
 console.log(verificaImpar(0));
 console.log(verificaImpar(333));
-console.log("\n");*/
 
 /** Ex 2
  * 
@@ -78,7 +79,9 @@ function queMesEstamos(num_mes) {
     }
 }
 
-/* case test 2
+// case test 2
+
+console.log("\nEx 2:\n");
 console.log(queMesEstamos(4));
 console.log(queMesEstamos(5));
 console.log(queMesEstamos(6));
@@ -91,7 +94,7 @@ console.log(queMesEstamos(11));
 console.log(queMesEstamos(12));
 console.log(queMesEstamos(1));
 console.log(queMesEstamos(2));
-console.log(queMesEstamos(3));*/
+console.log(queMesEstamos(3));
 
 /** Ex 3
  * Nesse Aprendi que o Javascript não é tão amigável. Digitei length errado como "lenght".
@@ -109,7 +112,7 @@ function imprimeMesmoTamanho(frase1,frase2) {
     let mensagem;
 
     if (frase1.length === frase2.length) {
-        mensagem = frase1 + "\n" + frase2;
+        mensagem = frase1 + " " + frase2;
         return mensagem;
     } else if (frase1.length > frase2.length) {
         mensagem = frase1;
@@ -120,10 +123,11 @@ function imprimeMesmoTamanho(frase1,frase2) {
     }
 }
 
-/*console.log(imprimeMesmoTamanho("Helicóptero","Motocicleta"));
+console.log("\nEx 3: \n");
+console.log(imprimeMesmoTamanho("Helicóptero","Motocicleta"));
 console.log(imprimeMesmoTamanho("Yaaaaaaay","Wooooooow"));
 console.log(imprimeMesmoTamanho("Yep", "nope")); //nope
-console.log(imprimeMesmoTamanho("Oui","no")); //Oui*/
+console.log(imprimeMesmoTamanho("Oui","no")); //Oui
 
 /** Ex 4
  *  Função deverá verificar se há letras 'A' ou 'a' no input
@@ -135,15 +139,17 @@ console.log(imprimeMesmoTamanho("Oui","no")); //Oui*/
 
 /*function tem_A_ou_a(frase_input) {
     let letra_detectada;
-    console.log(frase_input);
-    switch (frase_input) {
-        case ((frase_input.includes('A') && frase_input.includes('a')) == true):
+
+    const input_emString = frase_input.toString();
+    console.log(input_emString);
+    switch (input_emString) {
+        case ((input_emString.includes('A') && input_emString.includes('a')) == true):
             letra_detectada = "A, a.";
             break;
-        case (frase_input.includes('A') == true):
+        case (input_emString.includes('A') == true):
             letra_detectada = "A";
             break;
-        case (frase_input.includes('a') == true):
+        case (input_emString.includes('a') == true):
             letra_detectada = "a";
             break;
         default:
@@ -152,13 +158,10 @@ console.log(imprimeMesmoTamanho("Oui","no")); //Oui*/
             break;
     }
     return letra_detectada == null ? "Não" : `Sim. Letras: ${letra_detectada}`
-}
+}*/
 
-Todos os testes entram em default, não consegui validar condicional
-console.log(tem_A_ou_a("teste"));
-console.log(tem_A_ou_a("Wolfgang"));
-console.log(tem_A_ou_a("Amadeus"));
-console.log(tem_A_ou_a("A"));*/
+//Todos os testes entram em default, não consegui validar condicional
+
 
 function tem_A_ou_a(frase_input) {
     let letra_detectada;
@@ -176,7 +179,7 @@ function tem_A_ou_a(frase_input) {
     return letra_detectada == null ? "Não" : `Sim. Letras: ${letra_detectada}`;
 }
 
-
+console.log("\nEx 4: \n");
 console.log(tem_A_ou_a("Nope"));
 console.log(tem_A_ou_a("Wolfgang"));
 console.log(tem_A_ou_a("Amadeus"));
