@@ -91,9 +91,15 @@ console.log(concatenaStrings('Juliana', 'Juliana'));
 // Exercício 4
 
 function buscaLetraA(string){
-    if (string == 'a'){
+    if (string.includes('a')){
         return 'Sim';
+    } else if (string.includes('A')){
+        return 'Sim';
+    } else{
+        return 'Não'
     }
 }
 
+
 console.log(buscaLetraA('Ola'));
+console.log(buscaLetraA('Oi'));
