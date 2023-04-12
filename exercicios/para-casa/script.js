@@ -6,14 +6,12 @@ function parImpar(numero){
    let divisao = numero % 2
    if(divisao == 0){
     console.log(`${numero} é par`)
-    return "número par"
- }else{
+     }else{
     console.log(`${numero} é ímpar`)
-    return "impar"
-  }
+      }
 }
 parImpar(1)
-parImpar(2)
+parImpar(10)
 
 
 /**2. Crie uma função que receba um número de mês 
@@ -22,7 +20,7 @@ parImpar(2)
  * case para resolver este problema. */
 
 function meses(numero){
- let mensagem;
+ let mensagem
 
  switch(numero){
   case 1:
@@ -81,8 +79,8 @@ function tamanhoString(texto1,texto2){
         console.log(texto1)}
     else {console.log(texto2)}
 }
-tamanhoString("ola","meu nome é cybelle")
-tamanhoString("ola","oie")
+tamanhoString("ola","meu nome é Cybelle")
+tamanhoString("ola "," oie")
 
 /**Crie uma função que receba uma string como parâmetro e retorne 
  * "Sim" se a string contém a letra "a" ou "A" 
