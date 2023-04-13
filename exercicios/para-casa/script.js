@@ -3,9 +3,9 @@
  *  ímpar.**/
 
 function parOuImpar(numero){
-    if (numero / 2 == 0){
+    if (numero % 2 == 0){
         return console.log(`O número ${numero} é par.`)} 
-    else if (numero / 2 != 0) {
+    else if (numero % 2 != 0) {
         return console.log(`O número ${numero} é ímpar.`)}
     else {
         return console.log("Valor inválido.")}
