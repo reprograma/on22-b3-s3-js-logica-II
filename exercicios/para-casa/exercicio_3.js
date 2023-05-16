@@ -1,19 +1,24 @@
 // 3. Crie uma função que receba duas strings como parâmetros e retorne a concatenação das duas strings se ambas tiverem o mesmo tamanho. Se não tiverem o mesmo tamanho, retorne apenas a string de maior tamanho.
 
-function comparaStrings(str1, str2){
+//receber duas strings por parâmetro 
+// retorne a concatenação das duas strings se ambas estiverem do mesmo tamanho. 
+// se não estiver o mesmo tamanho retornar a string maior 
 
-    if(str1.length === str2.length){
-        return `${str1} ${str2}`
+function comparaStrings(segunda, quarta){
+    
+
+    if(segunda.length === quarta.length){
+        return `${segunda} ${quarta}`
     }
     
-    if(str1.length > str2.length){
-        return str1
+    if(segunda.length > quarta.length){
+        return segunda
     }
     
-    return str2
+    return quarta
 
 }
 
-let resultadoComparaStrings = comparaStrings("Suzik","Suzik")
+let resultadoComparaStrings = comparaStrings("terca","domingo")
 
 console.log(resultadoComparaStrings)

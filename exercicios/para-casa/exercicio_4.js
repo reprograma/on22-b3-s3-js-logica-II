@@ -1,30 +1,19 @@
-// 4. Crie uma função que receba uma string como parâmetro e retorne "Sim" se a string contém a letra "a" ou "A" e "Não" caso contrário.
+// 4. Crie uma função que receba uma string como parâmetro e retorne "Sim" se a string contém a letra "a" ou "A" e "Não" caso contrário. 
+
+//receber uma string 
+// retornar Sim para letra a minuscula  e A maiuscula
+// retornar Não para  nenhuma das afimarções acima. 
+
 
 function verificaCaractere(str) {
-    if(str.includes("a") || str.includes("A")){
+    if(str.includes("a") || str.includes("A")){ 
         return "Sim"
     }
 
-    return "Não"
+    return "Não"    
 }
 
-let resultadoExisteCaractere = verificaCaractere("Hoje fui a aula e aprendi sobre o método includes")
+let resultadoExisteCaractere = verificaCaractere("Rael é o Amor da minha vida todinha ")
 
 console.log(resultadoExisteCaractere)
 
-
-function verificaCaractereLimitedEdition(str, ch) {
-    let chMinusculo = ch.toLowerCase()
-    let chMaiusculo = ch.toUpperCase()
-
-    if(str.includes(chMinusculo) || str.includes(chMaiusculo)){
-        return "Sim"
-    }
-
-    return "Não"
-
-}
-
-let resultadoVerificaCaractereLimitedEdition = verificaCaractereLimitedEdition("Essa aula ta boa demais","x")
-
-console.log(resultadoVerificaCaractereLimitedEdition)

@@ -1,9 +1,11 @@
-// 2. Crie uma função que receba um número de mês como parâmetro e retorne o nome do mês correspondente. Use a estrutura switch case para resolver este problema.
+// 2. Crie uma função que receba um número de mês como parâmetro e retorne o nome do mês correspondente. Use a estrutura switch case para resolver este problema. 
 
-function retornaNomeMes(n_mes) {
-  let nome_mes;
+function retornaNomeMes(numero_mes) {  
 
-  switch (n_mes) {
+  let nome_mes;  // declaração da variavel ( let declara variavel mutavel )
+
+  switch (numero_mes) { //  usando o método switch case: escrevo o switch e coloco  todos os caso que quero verificar  com case ... 
+
     case 1:
       nome_mes = 'Janeiro';
       break
@@ -41,13 +43,11 @@ function retornaNomeMes(n_mes) {
       nome_mes = 'Dezembro';
       break
     default:
-        nome_mes = "Número inválido. Escreva um número entre 1 e 12"
+        nome_mes = "Número inválido. Escreva um número entre 1 e 12" 
   }
 
   return nome_mes
 }
 
 
-let nomeMes = retornaNomeMes(13)
-
-console.log(nomeMes)
+console.log(retornaNomeMes(10)) 
