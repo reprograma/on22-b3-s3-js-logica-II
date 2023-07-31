@@ -36,7 +36,7 @@ class Loja {
         let livro
         this.prompt.question("Titulo: \n",(respostaTitulo)=>{
             let titulo = respostaTitulo
-            this.prompt.question("Autor: \n", (respostaAutor)=>{
+            this.prompt.question("Autor: \n",  (respostaAutor)=>{
                 let autor = respostaAutor
                 this.prompot.question("Editora: \n", (respostaEditora)=>{
                     let editora = respostaEditora
@@ -144,7 +144,7 @@ class Loja {
                 this.prompt.close()
                 break
               default:
-                console.log(`A opção ${opção} não é válida`)
+                console.log(`A opção não é válida`)
                 this.prompt.close()
                 break
             }
