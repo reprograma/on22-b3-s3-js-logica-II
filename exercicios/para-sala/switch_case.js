@@ -1,4 +1,4 @@
-function verificaDiaDaSemana(n_dia) {
+function verificaMes(n_dia) {
   
   switch (n_dia) {
     case 1:
